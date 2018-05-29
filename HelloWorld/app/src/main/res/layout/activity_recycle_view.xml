@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".recyclerview.RecycleViewActivity"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btn_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="LinearRecyclerView"
+        android:textSize="25sp"
+        android:background="@color/colorGrayDark"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="HorRecyclerView"
+        android:textSize="25sp"
+        android:background="@color/colorGrayDark"
+        android:textAllCaps="false"
+        android:layout_marginTop="18dp"/>
+
+
+    <Button
+        android:id="@+id/btn_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="GridRecyclerView"
+        android:textSize="25sp"
+        android:background="@color/colorGrayDark"
+        android:textAllCaps="false"
+        android:layout_marginTop="18dp"/>
+
+
+    <Button
+        android:id="@+id/btn_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="PuRecyclerView"
+        android:textSize="25sp"
+        android:background="@color/colorGrayDark"
+        android:textAllCaps="false"
+        android:layout_marginTop="18dp"/>
+
+</LinearLayout>
