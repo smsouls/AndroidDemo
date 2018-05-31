@@ -12,7 +12,7 @@ import com.example.binxie.helloworld.recyclerview.RecycleViewActivity;
 
 public class UIActivity extends AppCompatActivity {
 
-    private Button btn, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11;
+    private Button btn, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +42,8 @@ public class UIActivity extends AppCompatActivity {
 
         btn11 = findViewById(R.id.btn_11);
 
+        btn12 = findViewById(R.id.btn_12);
+
         setListener();
     }
 
@@ -59,6 +61,7 @@ public class UIActivity extends AppCompatActivity {
         btn9.setOnClickListener(onClick);
         btn10.setOnClickListener(onClick);
         btn11.setOnClickListener(onClick);
+        btn12.setOnClickListener(onClick);
     }
 
     private class Onclick implements View.OnClickListener {
@@ -102,6 +105,9 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_11:
                     intent = new Intent(UIActivity.this, DialogActivity.class);
+                    break;
+                case R.id.btn_12:
+                    intent = new Intent(UIActivity.this, ProgressActivity.class);
                     break;
             }
             startActivity(intent);

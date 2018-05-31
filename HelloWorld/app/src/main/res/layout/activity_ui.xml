@@ -130,6 +130,16 @@
             android:textAllCaps="false"
             android:layout_marginTop="20dp"/>
 
+        <Button
+            android:id="@+id/btn_12"
+            android:background="#94a78f"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="ProgressActivity"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:layout_marginTop="20dp"/>
+
     </LinearLayout>
     
 
