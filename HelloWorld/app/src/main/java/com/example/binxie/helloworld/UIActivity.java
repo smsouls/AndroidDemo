@@ -12,7 +12,8 @@ import com.example.binxie.helloworld.recyclerview.RecycleViewActivity;
 
 public class UIActivity extends AppCompatActivity {
 
-    private Button btn, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9, btn10, btn11, btn12;
+    private Button btn, btn1, btn2, btn3, btn4, btn5, btn6, btn7,
+            btn8, btn9, btn10, btn11, btn12, btn13,btn14;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,10 @@ public class UIActivity extends AppCompatActivity {
 
         btn12 = findViewById(R.id.btn_12);
 
+        btn13 = findViewById(R.id.btn_13);
+
+        btn14 = findViewById(R.id.btn_14);
+
         setListener();
     }
 
@@ -62,6 +67,8 @@ public class UIActivity extends AppCompatActivity {
         btn10.setOnClickListener(onClick);
         btn11.setOnClickListener(onClick);
         btn12.setOnClickListener(onClick);
+        btn13.setOnClickListener(onClick);
+        btn14.setOnClickListener(onClick);
     }
 
     private class Onclick implements View.OnClickListener {
@@ -108,6 +115,12 @@ public class UIActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_12:
                     intent = new Intent(UIActivity.this, ProgressActivity.class);
+                    break;
+                case R.id.btn_13:
+                    intent = new Intent(UIActivity.this, CustomDialogActivity.class);
+                    break;
+                case R.id.btn_14:
+                    intent = new Intent(UIActivity.this, PopupWindowActivity.class);
                     break;
             }
             startActivity(intent);
