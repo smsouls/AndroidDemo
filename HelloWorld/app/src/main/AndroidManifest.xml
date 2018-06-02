@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UIActivity" />
+        <activity
+            android:name=".UIActivity"
+            android:label="小朋友" />
         <activity android:name=".TextViewActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".EditTextViewActivity" />
@@ -28,7 +30,10 @@
         <activity android:name=".WebViewActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".DialogActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,7 +42,23 @@
         </activity>
         <activity android:name=".ProgressActivity" />
         <activity android:name=".CustomDialogActivity" />
-        <activity android:name=".PopupWindowActivity"></activity>
+        <activity android:name=".PopupWindowActivity" />
+        <activity android:name=".LifeCycleActivity" />
+        <activity android:name=".jump.AActivity"
+            android:label="A"
+            android:launchMode="singleTop"
+            />
+        <!--//android:taskAffinity="xiaopengyou" 指定activity的栈-->
+        <activity android:name=".jump.BActivity"
+            android:label="B"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="xiao.peng.you.BActivity"></action>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".FunctionActivity"></activity>
     </application>
 
 </manifest>

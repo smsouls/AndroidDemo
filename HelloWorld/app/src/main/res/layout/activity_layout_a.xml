@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btn_jump"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jump"
+        android:textAllCaps="false"
+        android:textSize="20sp">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/btn_jump2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JumpToSelf"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_lanuch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ActivityLanuch"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>
+

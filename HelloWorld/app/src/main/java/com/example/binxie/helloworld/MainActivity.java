@@ -9,14 +9,17 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
 
-    private Button mBtnUI;
+    private Button mBtnUI, mBtnLifeCycle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mBtnUI = findViewById(R.id.btn_ui);
+        mBtnLifeCycle = findViewById(R.id.btn_lifecycle);
+
         OnClick onClick = new OnClick();
         mBtnUI.setOnClickListener(onClick);
+        mBtnLifeCycle.setOnClickListener(onClick);
 
     }
 
@@ -28,6 +31,9 @@ public class MainActivity extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.btn_ui:
                     intent = new Intent(MainActivity.this, UIActivity.class);
+                    break;
+                case R.id.btn_lifecycle:
+                    intent = new Intent(MainActivity.this, FunctionActivity.class);
                     break;
             }
 
