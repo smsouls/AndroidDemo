@@ -3,6 +3,7 @@
     package="com.example.binxie.helloworld">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -62,7 +63,11 @@
         <activity android:name=".FunctionActivity" />
         <activity android:name=".fragment.ContainerActivity" />
         <activity android:name=".EventActivity" />
-        <activity android:name=".HandlerActivity"></activity>
+        <activity android:name=".HandlerActivity" />
+        <activity android:name=".datastorage.DataStorageActivity" />
+        <activity android:name=".datastorage.SharedPreferencesActivity" />
+        <activity android:name=".datastorage.FileActivity" />
+        <activity android:name=".datastorage.ExternalFileActivity" />
     </application>
 
 </manifest>

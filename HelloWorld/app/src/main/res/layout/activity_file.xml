@@ -3,36 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="16dp">
 
-    <Button
-        android:id="@+id/btn_ui"
+
+    <EditText
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="UI"
-        android:textAllCaps="false"/>
-
+        android:hint="请输入内容"/>
 
     <Button
-        android:id="@+id/btn_lifecycle"
+        android:id="@+id/btn_save"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Func"
-        android:textAllCaps="false"/>
+        android:layout_marginTop="10dp"
+        android:text="保存"/>
 
     <Button
-        android:id="@+id/btn_fragment"
+        android:id="@+id/btn_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Fragment"
-        android:textAllCaps="false"/>
+        android:layout_marginTop="10dp"
+        android:text="显示"/>
 
-    <Button
-        android:id="@+id/btn_datastorage"
+    <TextView
+        android:id="@+id/tv_show"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="数据存储"
-        android:textAllCaps="false"/>
+        android:layout_marginTop="10dp"/>
+
 
 
 </LinearLayout>

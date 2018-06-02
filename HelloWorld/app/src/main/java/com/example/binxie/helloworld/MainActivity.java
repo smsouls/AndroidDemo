@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.binxie.helloworld.datastorage.DataStorageActivity;
 import com.example.binxie.helloworld.fragment.ContainerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
 
-    private Button mBtnUI, mBtnLifeCycle, mBtnFragment;
+    private Button mBtnUI, mBtnLifeCycle, mBtnFragment, mBtnStorage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,11 +21,13 @@ public class MainActivity extends AppCompatActivity {
         mBtnUI = findViewById(R.id.btn_ui);
         mBtnLifeCycle = findViewById(R.id.btn_lifecycle);
         mBtnFragment = findViewById(R.id.btn_fragment);
+        mBtnStorage = findViewById(R.id.btn_datastorage);
 
         OnClick onClick = new OnClick();
         mBtnUI.setOnClickListener(onClick);
         mBtnLifeCycle.setOnClickListener(onClick);
         mBtnFragment.setOnClickListener(onClick);
+        mBtnStorage.setOnClickListener(onClick);
 
     }
 
@@ -42,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_fragment:
                     intent = new Intent(MainActivity.this, ContainerActivity.class);
+                    break;
+                case R.id.btn_datastorage:
+                    intent = new Intent(MainActivity.this, DataStorageActivity.class);
                     break;
             }
 
