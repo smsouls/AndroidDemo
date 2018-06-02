@@ -11,7 +11,7 @@ import com.example.binxie.helloworld.jump.AActivity;
 public class FunctionActivity extends AppCompatActivity {
 
 
-    private Button mBtn1, mBtn2;
+    private Button mBtn1, mBtn2, mBtn3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,11 +19,13 @@ public class FunctionActivity extends AppCompatActivity {
 
         mBtn1 = findViewById(R.id.btn_1);
         mBtn2 = findViewById(R.id.btn_2);
+        mBtn3 = findViewById(R.id.btn_3);
 
 
         OnClick onClick = new OnClick();
         mBtn1.setOnClickListener(onClick);
         mBtn2.setOnClickListener(onClick);
+        mBtn3.setOnClickListener(onClick);
 
     }
 
@@ -40,6 +42,9 @@ public class FunctionActivity extends AppCompatActivity {
 
                 case R.id.btn_2:
                     intent = new Intent(FunctionActivity.this, AActivity.class);
+                    break;
+                case R.id.btn_3:
+                    intent = new Intent(FunctionActivity.this, EventActivity.class);
                     break;
 
             }

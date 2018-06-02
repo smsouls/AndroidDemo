@@ -60,7 +60,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".FunctionActivity" />
-        <activity android:name=".fragment.ContainerActivity"></activity>
+        <activity android:name=".fragment.ContainerActivity" />
+        <activity android:name=".EventActivity" />
+        <activity android:name=".HandlerActivity"></activity>
     </application>
 
 </manifest>
